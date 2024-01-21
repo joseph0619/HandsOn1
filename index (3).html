@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> ADD EVENT LISTENER </title>
+    <style>
+        body {
+            display: flex;
+            margin: 0;
+            padding: 0;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            height: 100vh;
+            background-image: url('bg.png');
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+    
+        h1 {
+            text-align: center;
+            font-size: 50px;
+            color: wheat;
+        }
+
+        .box {
+            display: flex;
+            justify-content: space-evenly;
+            width: 70%;
+            height: 70px;
+        }
+
+        input[type='button'] {
+            color: wheat;
+        }
+        
+        .button-8 {
+            width: 100px;
+            height: 100%;
+        }
+
+        .button-8 {
+            background-color: #093553;
+            border-radius: 3px;
+            border: 1px solid #030f18;
+            box-shadow: rgba(212, 183, 183, 0.7) 0 1px 0 0 inset;
+            box-sizing: border-box;
+            color: #194869;
+            cursor: pointer;
+            display: inline-block;
+            font-family: -apple-system,system-ui,"Segoe UI","Liberation Sans",sans-serif;
+            font-size: 13px;
+            font-weight: 400;
+            line-height: 1.15385;
+            margin: 0;
+            outline: none;
+            padding: 8px .8em;
+            position: relative;
+            text-align: center;
+            text-decoration: none;
+            user-select: none;
+            -webkit-user-select: none;
+            touch-action: manipulation;
+            vertical-align: baseline;
+            white-space: nowrap;
+        }
+
+        .button-8:hover,
+        .button-8:focus {
+            background-color: #145786;
+            color: #1f3546;
+        }
+
+        .button-8:focus {
+            box-shadow: 0 0 0 4px rgba(0, 149, 255, .15);
+        }
+
+        .button-8:active {
+            background-color: #2b4253;
+            box-shadow: none;
+            color: #2c5777;
+        }
+    </style>
+</head>
+<body>
+    
+    <h1> JavaScript addEventListener() Hands-On </h1>
+
+    <div class="box">
+        <input type="button" id="b1" class="button-8" value="Button 1">
+        <input type="button" id="b2" class="button-8" value="Button 2">
+        <input type="button" id="b3" class="button-8" value="Button 3">
+    </div>
+
+
+    <script>
+        document.getElementById('b1').addEventListener('click', button1);
+        document.getElementById('b2').addEventListener('click', button2);
+        document.getElementById('b3').addEventListener('click', button3);
+
+
+        function button1() {
+            alert("Button 1 was clicked!");
+        }
+        function button2() {
+            alert("Button 2 was clicked!");
+        }
+        function button3() {
+            alert("Button 2 was clicked!");
+        }
+    </script>
+</body>
+</html>
